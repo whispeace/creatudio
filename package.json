@@ -1,0 +1,31 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "start": "node .output/server/index.mjs",
+    "typecheck": "vue-tsc --noEmit",
+    "lint": "eslint .",
+    "postinstall": "nuxi prepare",
+    "generate": "nuxi generate",
+    "start:generate": "npx serve .output/public"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.41.0",
+    "@iconify/json": "^2.2.116",
+    "@nuxt/devtools": "^0.8.3",
+    "@nuxtjs/color-mode": "^3.3.0",
+    "@nuxtjs/i18n": "8.0.0-rc.4",
+    "@pinia/nuxt": "^0.4.11",
+    "@unocss/nuxt": "^0.55.7",
+    "@unocss/eslint-config": "^0.55.3",
+    "@vueuse/nuxt": "^10.4.1",
+    "nuxt": "^3.7.3",
+    "nuxt-vitest": "^0.10.5",
+    "eslint": "^8.48.0",
+    "typescript": "^5.2.2",
+    "vue-tsc": "^1.8.8"
+  }
+}
